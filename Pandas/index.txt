@@ -1,0 +1,10 @@
+Array of Dictionary to Dataframe
+dataframe = pd.DataFrame([{},{},{}])
+
+Get the unique value from a particular column
+From dataframe with column name "key", only store the unique value to keys
+keys= dataframe["key"].unique()
+
+Get all the row from the dataframe which meet the condition
+Store all the rows to x WHERE df column "key" equals "success"
+x = df[df["key"]=="success"] => x = df[<condition>]
