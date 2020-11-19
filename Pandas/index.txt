@@ -8,3 +8,7 @@ keys= dataframe["key"].unique()
 Get all the row from the dataframe which meet the condition
 Store all the rows to x WHERE df column "key" equals "success"
 x = df[df["key"]=="success"] => x = df[<condition>]
+
+Apply a function to a column
+this example make all -ve value to be zero
+df["key"] = df["key"].apply(lambda x: x if x>=0 else 0)
