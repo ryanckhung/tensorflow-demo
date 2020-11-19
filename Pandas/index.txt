@@ -21,3 +21,6 @@ w["key"] = np.where(w["key"] >= 0 , 10, 20)
 
 remove all the row that contain na
 df.dropna()
+
+sort all the row by the field "key"
+df.sort_values(by=['key'])
