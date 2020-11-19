@@ -15,3 +15,6 @@ df["key"] = df["key"].apply(lambda x: x if x>=0 else 0)
 
 Assume a dataframe has 10 columns and you want to select column 'a' and 'b' to form a new df1
 df1 = df[['a','b']]
+
+if (w["key"]>=0). >>  w["key"] = 10 else =20
+w["key"] = np.where(w["key"] >= 0 , 10, 20)
