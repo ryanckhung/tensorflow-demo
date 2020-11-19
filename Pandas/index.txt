@@ -12,3 +12,6 @@ x = df[df["key"]=="success"] => x = df[<condition>]
 Apply a function to a column
 this example make all -ve value to be zero
 df["key"] = df["key"].apply(lambda x: x if x>=0 else 0)
+
+Assume a dataframe has 10 columns and you want to select column 'a' and 'b' to form a new df1
+df1 = df[['a','b']]
