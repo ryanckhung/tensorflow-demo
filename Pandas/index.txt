@@ -24,3 +24,6 @@ df.dropna()
 
 sort all the row by the field "key"
 df.sort_values(by=['key'])
+
+drop columns
+df = final.drop(columns=['key','start','end'])
