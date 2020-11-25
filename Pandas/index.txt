@@ -43,3 +43,7 @@ isApple = True if fruit == 'Apple' else False
 Short cut for list
 accList = [{'acc_x': item["accX"], 'acc_y': item['accY'], 'acc_z': item['accZ']} for item in wbData]
 
+short cut for list
+x = [1.2345, 2.3456, 3.45667]
+[round(x,2) for x in x ]
+gives [1.23, 2.35, 3.46]
