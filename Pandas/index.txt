@@ -39,3 +39,7 @@ False in conditionList
 If condition in a single line
 fruit = 'Apple'
 isApple = True if fruit == 'Apple' else False
+
+Short cut for list
+accList = [{'acc_x': item["accX"], 'acc_y': item['accY'], 'acc_z': item['accZ']} for item in wbData]
+
