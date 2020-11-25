@@ -52,3 +52,7 @@ short cut for if condition
 x = True
 y = 1 if x else 0
 this example y give 1
+
+create a column base on the other two columns
+for a dataframe: if(df["B"]>50) {df["C"] = df["A"]} else {df["C"] = 0}
+df["C"] = df.apply(lambda row: row["A"] if row["B"]> 50 else 0, axis = 1)
