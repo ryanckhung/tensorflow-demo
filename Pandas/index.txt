@@ -36,3 +36,6 @@ Check if any False value inside the column
 considtionList = df['condition'].values.tolist()
 False in conditionList
 
+If condition in a single line
+fruit = 'Apple'
+isApple = True if fruit == 'Apple' else False
