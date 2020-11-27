@@ -67,4 +67,8 @@ short cut example
 [1, 2, 3, 0, 4, 0, 6, 0]
 
 
-
+>>> 5 if True else 0
+5
+>>> 5 if False else 0
+0
+>>> 
