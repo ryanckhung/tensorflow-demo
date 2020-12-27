@@ -72,3 +72,6 @@ short cut example
 >>> 5 if False else 0
 0
 >>> 
+
+use dataframe to plot in one statement
+df.plot(x="datetime", y="skin_conductance", figsize=(18,5)).legend(["Skin Conductance"])
