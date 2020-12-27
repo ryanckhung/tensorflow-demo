@@ -74,4 +74,4 @@ short cut example
 >>> 
 
 use dataframe to plot in one statement
-df.plot(x="datetime", y="skin_conductance", figsize=(18,5)).legend(["Skin Conductance"])
+>>> df.plot(x="datetime", y="skin_conductance", figsize=(18,5)).legend(["Skin Conductance"])
