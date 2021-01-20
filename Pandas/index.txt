@@ -76,3 +76,10 @@ short cut example
 use dataframe to plot in one statement
 >>> df.plot(x="datetime", y="skin_conductance", figsize=(18,5)).legend(["Skin Conductance"])
 >>> df.plot(x="datetime", y=["heart_rate", "acc_zx_rate"], figsize=(32,15)) # plot 2 columns by putting array name on y axis
+
+
+WINSIZE = 2
+s = pd.Series([5, 5, 5, 100, 100, 5, 5])
+#(s.rolling(WINSIZE).mean()-s.rolling(WINSIZE).max()/WINSIZE)*WINSIZE/(WINSIZE-1)
+s.rolling(WINSIZE).apply(lambda x: x.mean())
+s.rolling(WINSIZE).mean()
