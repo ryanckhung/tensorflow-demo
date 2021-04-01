@@ -8,6 +8,9 @@ keys= dataframe["key"].unique()
 Get all the row from the dataframe which meet the condition
 Store all the rows to x WHERE df column "key" equals "success"
 x = df[df["key"]=="success"] => x = df[<condition>]
+for multiple condition: add () to each condtion and then apply & |
+data = dfp[(dfp['capture_time']>timeRange['start']) & (dfp['capture_time']<timeRange['end'])]
+
 
 Apply a function to a column
 this example make all -ve value to be zero
