@@ -104,3 +104,7 @@ def meanNormalize(x):
     if x.max()-x.min() != 0:
         list = (x-x.mean())/(x.max()-x.min())
     return list
+    
+    
+# conver a pandas column into a np array
+df["participant"].values
