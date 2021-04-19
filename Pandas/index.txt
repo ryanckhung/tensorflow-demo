@@ -91,3 +91,16 @@ s.rolling(WINSIZE).mean()
 Read from CSV
 file_path = '/Users/ryan/Desktop/111.csv'
 df= pd.read_csv(file_path).dropna()
+
+
+Feature Extraction
+# RMS
+def rms(y):
+    return np.sqrt(np.mean(y**2))
+
+# Mean Normalize
+def meanNormalize(x):
+    list = np.zeros(len(x))
+    if x.max()-x.min() != 0:
+        list = (x-x.mean())/(x.max()-x.min())
+    return list
